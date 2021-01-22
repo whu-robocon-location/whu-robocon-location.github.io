@@ -1,7 +1,7 @@
-title: wu-kan # 站点标题
+title: whu-robocon # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU超算17级在读<br/>
-  水野爱<br/>
+  whu M&E 18级在读<br/>
+  LOCATION<br/>
   HPC<br/>
   田宫例四驱车<br/>
   <a href="mailto:i@wu-kan.cn">
@@ -108,20 +108,20 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                     "content": {
                       "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
-                      "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                      "skin": ["稍等一下哦", "我让我的朋友来找你吧"],
                       "hidden": true,
                       "custom": [{
                         "selector": "a",
                         "type": "link",
                       }, {
                         "selector": ".sidebar-toggle",
-                        "text": "打开侧边栏叭~"
+                        "text": "WHU-LOCATION"
                       }, {
                         "selector": ".effect-info",
-                        "text": "哇，你发现了什么！"
+                        "text": "今天不学习，明天变垃圾"
                       }, {
                         "selector": "#sidebar-search-input",
-                        "text": "想搜索什么呢？很多干货哦！"
+                        "text": "2m误差1mm？定位精度还可以再高一点嘛"
                       }, {
                         "selector": "#toc",
                         "text": "这是目录~"
