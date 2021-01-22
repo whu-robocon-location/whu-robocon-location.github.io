@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Nancy\Desktop\jekyll-theme-diary-master\README.md
 -->
-### WHU-ROBOCON-LOCATION
+# WHU-ROBOCON-LOCATION
 
 <!-- .slide -->
 
@@ -54,8 +54,8 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 ## Skills
 
 <!-- .slide vertical=true -->
-
-- **直线更新**, Familiar
+ 
+  - **直线更新**, Familiar
   - **圆弧更新**, Familiar
   - **联合标定**, Familiar
 
