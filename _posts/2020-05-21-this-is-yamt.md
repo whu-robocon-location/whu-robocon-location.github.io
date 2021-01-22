@@ -1,5 +1,13 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-01-22 09:47:19
+ * @LastEditTime: 2021-01-22 10:24:06
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedc:\Users\Nancy\Desktop\jekyll-theme-diary-master\_posts\2020-05-21-this-is-yamt.md
+-->
 ---
-title: This is YAMT!
+title: This is     YAMT     !
 layout: post
 categories: [Typography, Markdown, Tips]
 image: /assets/img/logo.jpg
