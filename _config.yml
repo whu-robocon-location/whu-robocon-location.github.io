@@ -220,13 +220,13 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               full_text_search: false # 可能导致缓慢的搜索和加载
               append: | # 如果看不懂就不改
                 <style>
-                  #sidebar-search-input {
+                  sidebar-search-input {
                     background: none;
                     border: none;
                     color: White;
                     width: 100%;
                   }
-                  #sidebar-search-results-container {
+                  sidebar-search-results-container {
                     overflow: auto auto;
                     max-height: 66.6vh;
                   }
@@ -302,7 +302,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     position: absolute;
                     display: block;
                   }
-                  .effect-right_to_left .effect-img {
+                  .effect-right_to
+  - jekyll-feed # 为站点生成RSS源eft .effect-img {
                     transform-origin: 0% 50%;
                   }
                   .effect-right_to_left:hover .effect-img {
@@ -520,7 +521,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "el": x,
                     "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
                     "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-                    "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
+                    "placeholder": "在这里评论吧！",
                     "requiredFields": ["nick","mail"],
                     "visitor": true,
                     "recordIP": true
@@ -579,7 +580,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           append_to_head:
             - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
               <script>
-                var myname = "WuK";
+                var myname = "OYH";
                 var profile = "i@wu-kan.cn";
                 var usage = "payment";
                 var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
