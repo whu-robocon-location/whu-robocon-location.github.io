@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-01-22 09:32:52
+ * @LastEditTime: 2021-01-22 15:14:48
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedc:\Users\Nancy\Desktop\jekyll-theme-diary-master\README.md
+-->
 ### WHU-ROBOCON-LOCATION
 
 <!-- .slide -->
@@ -5,7 +13,7 @@
 ## Contact
 
 - Address: **Wuhan,Wuhan university,Hubei, China**
-- Phone: **+86 17171318464**
+- Phone: **+86 17371318464**
 - Site: **<https://whu-robocon-location.github.io>**
 
 <!-- .slide -->
@@ -18,9 +26,7 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 
   - first scholarship
   - national scholarship
-  - Parallel and Distributed Computing
-  - High Performance Computing
-  - Multicore Computing
+  - GPA 3.83
 
 <!-- .slide -->
 
@@ -28,17 +34,7 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 
 <!-- .slide vertical=true -->
 
-- **Gold Medal (Rank 4)**, [CCF Collegiate Computer Systems & Programming Contest](https://wu-kan.cn/_posts/2020-10-17-2020-CCF-CCSP%E7%AB%9E%E8%B5%9B-%E5%90%AB%E5%88%86%E8%B5%9B%E5%8C%BA%E7%AB%9E%E8%B5%9B/), South China Division, Oct. 2020
-- **First Scholarship**, Oct. 2020
-- **Silver Medal (Rank 2)**, The 8th "Intel Cup" [Parallel Application Challenge](http://sdcs.sysu.edu.cn/content/5501), Sept. 2020
-- **First Prize (Rank 3) & Winner Prize (Rank 5)**, [Priority Research Application](https://cas-pra.sugon.com/webnews/detail/205), Aug. 2020
-
-<!-- .slide vertical=true -->
-
-- **Top 0.05% in 11395**, [The 18th CCF Certified Software Professional](https://wu-kan.cn/_posts/2019-12-16-%E7%AC%AC%E5%8D%81%E5%85%AB%E6%AC%A1CCF%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E8%83%BD%E5%8A%9B%E8%AE%A4%E8%AF%81/), Dec. 2019
-- **Silver Medal**, [ICPC Asia Regional Contest Xuzhou Site](https://wu-kan.cn/_posts/2019-11-04-%E5%86%8D%E8%A7%81-%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/), Nov. 2019
-- **Second Scholarship**, Oct. 2019
-- **First Prize**, China Collegiate Programming Contest, Guangdong Division, May 2019
+- **web +**, [CCF Collegiate Computer Systems & Programming Contest](https://wu-kan.cn/_posts/2020-10-17-2020-CCF-CCSP%E7%AB%9E%E8%B5%9B-%E5%90%AB%E5%88%86%E8%B5%9B%E5%8C%BA%E7%AB%9E%E8%B5%9B/), South China Division, Oct. 2020
 
 <!-- .slide -->
 
