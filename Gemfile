@@ -1,6 +1,13 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "dotenv"
-gem "github-pages"
-gem "jekyll"
-gem "jekyll-github-metadata"
+source "https://rubygems.org"
+gemspec
+
+gem 'jekyll'
+
+gem 'wdm', '>= 0.1.0'
+
+gem 'jekyll-paginate'
+gem 'jekyll-feed'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'

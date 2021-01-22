@@ -1,209 +1,156 @@
-# Neumorphism <!-- omit in toc -->
+# [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/249c3da6-7b23-4b57-915d-71934329e306/deploy-status)](https://yamt.netlify.app/)
+![](https://badgen.net/rubygems/dt/jekyll-yamt)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/PandaSekh/Jekyll-YAMT/issues)
+![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-YAMT?label=Fork%20it%21&style=social)
+## [Live Demo](https://yamt.netlify.app/)
 
-> Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
+![Homepage](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot.png?raw=true)
 
-* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
-* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
-* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
+YAMT is a minimal [Jekyll](http://jekyllrb.com) theme focused on simplicity and ease-of-use. It has great modularity, allowing you to easily decide what you actually want on your website.
 
-[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
-[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
-<a href="https://jekyll-themes.com">
-    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+## Contents
 
-[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Customize](#options)
+  - [Basics](#Basics)
+  - [Typography](#Typography)
+  - [Header](#header)
+  - [Home](#home)
+  - [Post](#post)
+  - [Contact Form](#contact-form)
+- [Development](#development)
+- [Credits](#credits)
+- [License](#license)
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents <!-- omit in toc -->
+## Features
 
-* [About The Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Features](#features)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-  * [Personalize and Customize](#personalize-and-customize)
-    * [_config.yml](#_configyml)
-    * [Github Metadata Plugin](#github-metadata-plugin)
-    * [_data/*.yml](#_datayml)
-    * [Particles.js](#particlesjs)
-* [Contributing](#contributing)
-* [License](#license)
-* [Acknowledgements](#acknowledgements)
+- Minimal and clean design.
+- Fully modular: activate and load only what you really need.
+- Works great on mobile and smaller screens.
+- Works on Github Pages.
+- Supports [Disqus](https://disqus.com/) comments activated only on button press, if you activate them.
+- [Google Analytics](https://www.google.com/analytics/) support.
+- [Open Graph](https://ogp.me/) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started) support to better index the website content on search engines and social networks.
+- [MathJAX](https://www.mathjax.org/) and [LaTeX](https://www.latex-project.org/) optional support. Write beautiful math!
+- [RSS](https://github.com/jekyll/jekyll-feed) support.
+- Beautiful [Syntax Highlight](https://yamt.netlify.app/2020/05/19/special-formatting.html#syntax-highlight). Write some code and show it in a graceful way.
 
-<!-- ABOUT THE PROJECT -->
+## Screenshots
 
-## About The Project
+Mobile:  
+![Mobile](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_mobile.png?raw=true)
 
-[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
+Code Highlight:  
+![Code](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_code_highlight.png)
 
-This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
+Minimal:  
+![Minimal](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_minimal.png?raw=true)
 
-### Built With
+## Installation
 
-* [Jekyll](https://jekyllrb.com/)
+There are four way to use YAMT: Netlify (suggested, as this theme has a contact module built-in working only on Netlify), Github Pages, as a gem-based theme, by forking this repo or by copying all the files into your directory.
 
-### Features
+### Download the files
+You can [download the files](https://github.com/PandaSekh/Jekyll-YAMT/releases/latest) and add them in your directory to start working.
 
-* Mobile-First Responsive Design
-* Animated preloader animation
-* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
-* Dark Neumorphism Design on main content
-* [Animations On Scroll](https://michalsnik.github.io/aos/)
-* Filterable *Skills* word cloud
-* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
-* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
-* [Google Analytics](https://analytics.google.com/)
+### Netlify
 
-<!-- GETTING STARTED -->
+1. [Fork this repo](https://github.com/PandaSekh/Jekyll-YAMT/generate). You can copy only master, set it to private or public and name it however you want.
+2. Go to [Netlify](https://app.netlify.com/), create a New site from Git, choose your repo or all repos, no difference. Back to Netlify, select the recently forked repo.
+3. Owner and branch are good to go. In build command write `bundle exec jekyll build` and publishing directory should be `_site/`.
+4. Deploy. Your site will shortly be available. Under domain settings you can change your subdomain, or add a primary level one. 
 
-## Getting Started
+### Github Pages
 
-To get a local copy up and running follow these simple steps.
+Github Pages uses the [--safe flag](https://jekyllrb.com/docs/configuration/options/) to build jekyll websites, which disable custom plugins, caching to disk and ignore symbolic links. Because of that, I suggest you to use any other method. Netlify works great with a 5 minute config, so I suggest you use it.
 
-`The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
+1. [Fork this repo](https://github.com/PandaSekh/Jekyll-YAMT/generate).
+2. Create a new branch in your repo and call it `gh-pages`.
+3. Publish your website and choose gh-pages as the target branch.
 
-### Prerequisites
+### Remote theme
 
-* [NodeJS](https://nodejs.org/en/)
+[Follow these instructions](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll).
 
-```sh
-brew install node
-```
+### Gem-based theme 
+1. Add this line to your Jekyll site's `Gemfile`:
 
-If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
+    ```ruby
+    gem "jekyll-yamt"
+    ```
 
-* [Jekyll](https://jekyllrb.com/)
+2. And add this line to your Jekyll site's `_config.yml`:
 
-```sh
-gem install bundler jekyll
-```
+    ```yaml
+    theme: jekyll-yamt
+    ```
 
-For more information, refer to [this](https://jekyllrb.com/docs/installation/).
+3. And then execute:
 
-* [Yarn](https://yarnpkg.com/)
+    ``` bash
+    $ bundle
+    ```
 
-```sh
-npm install -g yarn
-```
+4. Or install it yourself as:
+    
+    ``` bash
+    $ gem install jekyll-yamt
+    ```
 
-### Installation
+#### ERROR: There was an error while loading `jekyll-yamt.gemspec`: No such file or directory - git ls-files -z. Bundler cannot continue.
+If you encounter this error when running `bundle install`, please make sure git is installed.
 
-> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
+## Customize
 
-1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
+YAMT is easily customizable. If you don't need a functionality, just deactivate it in `_data/settings.yml`.
+Most of the customizable things are self-explanatory and found in the `_data` folder and in the `_config.yml`.
 
-```sh
-# Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
-```
+### Basics
 
-or
+Under the `_data` folder there are three files: pages, settings and social.
+In pages you can add other pages that will show up in the nav-
+In social you can add your socials that will show up in the nav. To add a social, find a suitable icon on [FontAwesome](https://fontawesome.com/) and add it's name in the name tag.
+Brand defines Font Awesome's font type (fas is solid, fab is brand).
+Out of the box this theme has support colors for a bunch of social. If your social isn't supported, just add the color in the header.css 
 
-1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
+In `_data/settings.yml` you can activate or deactivate various functions of the theme, like analytics, disqus comments, related posts and so on.
 
-```sh
-# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
-git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
-```
+### Typography
+By default YAMT uses the System Font STack, which greatly reduces load times. If you want to use the old Font Stack, in `assets/main.scss` change `typography` to `typography-old`.
 
-2: Change directory into neumorphism
+### Header
+In `_data/settings.yml` you can choose to hide or show the subtitle, the page navigation or the social icons.
 
-```sh
-cd neumorphism
-```
+### Home
+In `_data/settings.yml` you can choose to hide or show the posts infos (date and read-time) and the featured image.
 
-3: Install dependencies
+### Post
+In `_data/settings.yml` you can choose to hide or show the post infos, categories, related posts and comments.
+Note that by removing categories the Categories Archives will no longer be reachable.
 
-```sh
-yarn
-```
+### Contact Form
+YAMT has a built-in contact form builded using [Netlify](https://app.netlify.com/) free form functionality. To make it work you only need the line `data-netlify="true"` when declaring a form.  
+If you don't want to use Netlify, remove the line `data-netlify="true"`.
 
-<!-- USAGE EXAMPLES -->
+## Development
 
-## Usage
+[Contributions are welcomed and encouraged](https://github.com/PandaSekh/Jekyll-YAMT/issues).
 
-* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
+To set up your environment to develop this theme, run `bundle install`.
 
-```sh
-gulp
-```
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `yamt.gemspec` accordingly.
 
-### Personalize and Customize
-
-#### _config.yml
-
-Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
-
-#### Github Metadata Plugin
-
-If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
-
-You need to generate a new personal access token on GitHub:
-
-* Go to the [Github Token site](https://github.com/settings/tokens/new)
-* Select the scope `public_repository`, and add a description.
-* Confirm and save the settings. Copy the token you see on the page.
-* Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
-
-```text
-JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
-```
-
-To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
-
-For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
-
-* Description
-* Homepage link, if there is a live version of it
-* Topics
-
-Example:
-![Github Repository Information Example][github-repo-info]
-
-#### _data/*.yml
-
-Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
-
-#### Particles.js
-
-Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
+## Credits
+Theme designed and created by [Alessio Franceschi](https://github.com/PandaSekh/).
+Inspired by [Lagrange by LeNPaul](https://lenpaul.github.io/Lagrange/).  
+Also great help from [this blog](https://blog.webjeda.com/), I've used this even before I created this theme.  
+Images from [Unsplash](https://unsplash.com/).
 
 ## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-* [Font Awesome](https://fontawesome.com/)
-* [Normalize.css](https://necolas.github.io/normalize.css/)
-* Based Preloader on [Codrin Pavel's](https://codepen.io/zerospree/pen/aCjAz) version
-* Typing Carousel by [Gregory Schier](https://codepen.io/gschier/pen/jkivt)
-* Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
-* Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
-* Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+The theme is available as open source under the terms of the [MIT License](https://github.com/PandaSekh/Jekyll-YAMT/blob/master/LICENSE.txt).
