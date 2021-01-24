@@ -246,37 +246,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     min-height: 101%;
                   }
                 </style>
-              - | # 侧边栏头像效果
-                <style>
-                  .effect {
-                    margin: 1rem;
-                    perspective: 900px;
-                  }
-                  .effect-info {
-                    text-align: center;
-                    backface-visibility: hidden;
-                    position: absolute;
-                    top: 0;
-                    transform-style: preserve-3d;
-                  }
-                  .effect-img {
-                    z-index: 11;
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    transition: all 0.5s ease-in-out;
-                  }
-                  .effect-img:before {
-                    position: absolute;
-                    display: block;
-                  }
-                  .effect-right_to_left .effect-img {
-                    transform-origin: 0% 50%;
-                  }
-                  .effect-right_to_left:hover .effect-img {
-                    transform: rotate3d(0, 1, 0, -180deg);
-                  }
-                </style>
               - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
                 <div>
                   <i class="fas fa-cog fa-spin fa-fw"></i>
