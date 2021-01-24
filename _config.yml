@@ -3,14 +3,14 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   武汉大学定位组<br/>
   <iframe
    src="//music.163.com/outchain/player?type=2&id=29567189&auto=1&height=32">
-    width=100%
+    width=80%
     height=52
     frameborder="no"
     border="0"
     marginwidth="0"
     marginheight="0"
   ></iframe>
-url: https://whu-robocon-location.github.io/ # 你的域名，例如 https://wu-kan.github.io
+url: https://whu-robocon-location.github.io/ # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
@@ -39,16 +39,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href="/feed.xml"
                 title="RSS"
                 type="application/rss+xml"
-              />
-            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
-              <link
-                rel="apple-touch-icon-precomposed"
-                href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6&step_word=&hs=0&pn=0&spn=0&di=1210&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=967575136%2C4013611419&os=2300000466%2C1597304240&simid=3402531983%2C103327244&adpicid=0&lpn=0&ln=1801&fr=&fmq=1611486708711_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%3A%2F%2Fimgs.soufun.com%2Fviewimage%2Fnews%2F2015_05%2F04%2F67%2F35%2Fhd%2F003034401800%2F450x300.jpg%26refer%3Dhttp%3A%2F%2Fimgs.soufun.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1614078994%26t%3D6fc06174f396bf4ef2e0c0bf9736b32e&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bll0t_z%26e3Bv54AzdH3F%25Ec%25A0%25lD%25EF%25Bb%25BD%25E0%25lC%25BD%25Em%25BE%25Bm%25D8%25bn%25EE%25b9%25lF%25El%25bF%25bD%25Ed%25ba%25Bn%25Em%25B9%25AF%25Em%25A9%25bB%25Ec%25BA%25A8%25Ec%25bE%25lCAzdH3F&gsm=1&rpstart=0&rpnum=0&islist=&querylist=&force=undefined"
-              />
-              <link
-                rel="shortcut
-                icon"
-                href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6&step_word=&hs=0&pn=0&spn=0&di=1210&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=967575136%2C4013611419&os=2300000466%2C1597304240&simid=3402531983%2C103327244&adpicid=0&lpn=0&ln=1801&fr=&fmq=1611486708711_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%3A%2F%2Fimgs.soufun.com%2Fviewimage%2Fnews%2F2015_05%2F04%2F67%2F35%2Fhd%2F003034401800%2F450x300.jpg%26refer%3Dhttp%3A%2F%2Fimgs.soufun.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1614078994%26t%3D6fc06174f396bf4ef2e0c0bf9736b32e&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bll0t_z%26e3Bv54AzdH3F%25Ec%25A0%25lD%25EF%25Bb%25BD%25E0%25lC%25BD%25Em%25BE%25Bm%25D8%25bn%25EE%25b9%25lF%25El%25bF%25bD%25Ed%25ba%25Bn%25Em%25B9%25AF%25Em%25A9%25bB%25Ec%25BA%25A8%25Ec%25bE%25lCAzdH3F&gsm=1&rpstart=0&rpnum=0&islist=&querylist=&force=undefined"
               />
             - | # 来自lanyon的页面样式，不要改
               <link
@@ -358,7 +348,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "01/22/2021 14:00:00")// 这是我第一篇CSDN博客的时间
                   </script>
                 </div>
               - | # 不蒜子页面统计，看不懂可不改
@@ -389,7 +379,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - | # Copyright声明
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  2017-2020 WuK
+                  2017-2020 WHULOCATION
                 </div>
             wordcount: # 全站字数统计
               enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
