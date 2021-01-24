@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://whu-robocon-location.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://whu-robocon-location.github.io//" rel="alternate" type="text/html" /><updated>2021-01-24T17:20:36+08:00</updated><id>https://whu-robocon-location.github.io//feed.xml</id><title type="html">wu-kan</title><subtitle>武汉大学定位组&lt;br/&gt;
+yx&lt;br/&gt;
+oyh&lt;br/&gt;
+hqr&lt;br/&gt;
+&lt;a href=&quot;mailto:i@wu-kan.cn&quot;&gt;
+  &lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://github.com/wu-kan&quot;&gt;
+  &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://codeforces.com/profile/WuK&quot;&gt;
+  &lt;i class=&quot;fas fa-chart-bar&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://vjudge.net/user/WuK&quot;&gt;
+  &lt;i class=&quot;fas fa-smile&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://www.zhihu.com/people/wu.kan/activities&quot;&gt;
+  &lt;i class=&quot;fab fa-zhihu&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;iframe
+  src=&quot;https://music.163.com/outchain/player?type=0&amp;id=155059595&amp;auto=0&amp;height=32&quot;
+  width=100%
+  height=52
+  frameborder=&quot;no&quot;
+  border=&quot;0&quot;
+  marginwidth=&quot;0&quot;
+  marginheight=&quot;0&quot;
+&gt;&lt;/iframe&gt;
+</subtitle><entry><title type="html">Env Config</title><link href="https://whu-robocon-location.github.io//_posts/2021-01-22-env-config/" rel="alternate" type="text/html" title="Env Config" /><published>2021-01-22T00:00:00+08:00</published><updated>2021-01-22T00:00:00+08:00</updated><id>https://whu-robocon-location.github.io//_posts/env-config</id><content type="html" xml:base="https://whu-robocon-location.github.io//_posts/2021-01-22-env-config/">&lt;h1 id=&quot;config-local-jekyll-website&quot;&gt;config local jekyll website&lt;/h1&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;config ruby evn&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;sudo gem install ruby-full&lt;/li&gt;
+  &lt;li&gt;sudo gem install bundler (remember to check bundler version, see gemfile.lock)&lt;/li&gt;
+  &lt;li&gt;if problem occurs, sudo gem install minic&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="_posts" /><summary type="html">config local jekyll website</summary></entry><entry><title type="html">WHU Location Website</title><link href="https://whu-robocon-location.github.io//_posts/location/2021-01-22-whu-location/" rel="alternate" type="text/html" title="WHU Location Website" /><published>2021-01-22T00:00:00+08:00</published><updated>2021-01-22T00:00:00+08:00</updated><id>https://whu-robocon-location.github.io//_posts/location/whu-location</id><content type="html" xml:base="https://whu-robocon-location.github.io//_posts/location/2021-01-22-whu-location/">&lt;h3 id=&quot;whu-location-website&quot;&gt;WHU Location Website&lt;/h3&gt;</content><author><name></name></author><category term="_posts" /><category term="Location" /><category term="Location" /><summary type="html">WHU Location Website</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://whu-robocon-location.github.io//assets/img/oranges.jpg" /><media:content medium="image" url="https://whu-robocon-location.github.io//assets/img/oranges.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

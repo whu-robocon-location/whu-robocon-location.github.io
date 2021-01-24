@@ -121,34 +121,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 src='https://zz.bdstatic.com/linksubmit/push.js'
                 async="async"
               ></script>
-            - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
-              <style>
-                .wrap {
-                  transition-property: width,background-size,transform;
-                  transition-duration: .3s;
-                  transition-timing-function: ease-in-out;
-                  min-height: 100%;
-                  display: inline-block;
-                  background-size: 100% auto;
-                  background-position: 0% 0%;
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
-                  background-image: url(https://cn.bing.com/images/search?view=detailV2&ccid=RZcoJFIg&id=152836C23A8534ADC63424FA16A25F8CE89DC380&thid=OIP.RZcoJFIgyGL7eYtBAVSSCwHaKY&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR459728245220c862fb798b410154920b%3frik%3dgMOd6Ixfohb6JA%26riu%3dhttp%253a%252f%252fpic33.nipic.com%252f20131010%252f5311590_135521528000_2.jpg%26ehk%3dP8lPfzhpQ9nYpkaOUk3PObDW1Wt%252fFXjB%252f2hkLqlfRtg%253d%26risl%3d%26pid%3dImgRaw&exph=1024&expw=730&q=%e5%86%b0%e6%9e%9c&simid=608025386701032311&ck=E93DCAC42EECD4AAC7CDB2AE67C61CF6&selectedIndex=1&FORM=IRPRST&ajaxhist=0);
-                }
-                @media (min-aspect-ratio: 2400/1850) {
-                  .wrap {
-                    background-image: url(https://cn.bing.com/images/search?view=detailV2&ccid=RZcoJFIg&id=152836C23A8534ADC63424FA16A25F8CE89DC380&thid=OIP.RZcoJFIgyGL7eYtBAVSSCwHaKY&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR459728245220c862fb798b410154920b%3frik%3dgMOd6Ixfohb6JA%26riu%3dhttp%253a%252f%252fpic33.nipic.com%252f20131010%252f5311590_135521528000_2.jpg%26ehk%3dP8lPfzhpQ9nYpkaOUk3PObDW1Wt%252fFXjB%252f2hkLqlfRtg%253d%26risl%3d%26pid%3dImgRaw&exph=1024&expw=730&q=%e5%86%b0%e6%9e%9c&simid=608025386701032311&ck=E93DCAC42EECD4AAC7CDB2AE67C61CF6&selectedIndex=1&FORM=IRPRST&ajaxhist=0);
-                  }
-                }
-                .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-                  width: calc(100% - 14rem);
-                  background-size: calc(100% - 14rem) auto;
-                  transform: translateX(14rem);
-                }
-                .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-                  transform: translateX(0);
-                }
-              </style>
             - | # 网站字体，要换字体建议架梯子上<https://fonts.google.com/>挑选，再通过fonts.loli.net 加速引入
               <style>
                 .sidebar,
