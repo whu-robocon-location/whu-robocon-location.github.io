@@ -1,15 +1,6 @@
 title: WHU-LOCATION # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   武汉大学定位组<br/>
-  <iframe
-   src="//music.163.com/outchain/player?type=2&id=29567189&auto=1&height=32">
-    width=80%
-    height=52
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-  ></iframe>
 url: https://whu-robocon-location.github.io/ # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -116,11 +107,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
                   });'
               ></script>
-            - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
-              <script
-                src='https://zz.bdstatic.com/linksubmit/push.js'
-                async="async"
-              ></script>
             - | # 网站字体，要换字体建议架梯子上<https://fonts.google.com/>挑选，再通过fonts.loli.net 加速引入
               <style>
                 .sidebar,
@@ -171,12 +157,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               </style>
           sidebar: # 此配置项下是一些关于侧边栏的配置
             disable: false # 是否不显示sidebar
-            avatar: # 侧边栏显示的头像
-              enable: false
-              img:  # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
-                href: /
+                href: /home/
               - title: '<i class="fas fa-comments fa-fw"></i> 留言'
                 href: /comments/
               - title: '<i class="fas fa-tags fa-fw"></i> 标签'
