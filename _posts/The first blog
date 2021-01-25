@@ -1,0 +1,62 @@
+<!--
+ * @Author: Nancy
+ * @Date: 2021-01-23 09:42:38
+ * @LastEditTime: 2021-01-23 11:25:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedc:\Users\Nancy\Desktop\j-scope guide.md
+-->
+# j-scope简介
+1. 无需串口，只需一根jlink即可实现虚拟示波器的功能；
+2. 可将数据导出成csv文件（excel可打开），便于数据分析
+3. 读取数据频率可达1MHz，并可以实时显示数据的极值和移动平均值
+4. 数据输出精度高于visual scope，保留两位小数
+5. 保存数据量大，j-scope最多支持同时监视100个变量
+6. 操作便捷，波形自适应窗格
+
+
+# j-scope下载
+1. [官方手册 (j-scope version 5.10)](https://www.segger.com/downloads/jlink/)
+2. [J-Scope for Windows [Beta] V 6.11m ](https://www.segger.com/downloads/jlink/#JScope)
+
+Note: 
+* 将j-scope与jlink驱动保存在同一目录下
+* 官方建议j-scope的版本低于jlink驱动版本，经测试，jlink驱动5.1也可以使用j-scope 6.11m
+
+# j-scope 使用介绍
+### 文件格式（I/O）
+1. j-scope读取.axf文件和jscope project文件，输出csv和jraw、jscope project文件。
+
+2. .axf文件:由keil在编译程序的时候生成（一般保存在pro->obj->project.axf），如果找不到可以在keil的build output窗口中查看文件保存路径
+3. jscope project文件：打出波形后点击停止记录，再在file栏里选择save project，即可保存为jscope project文件。建议与.axf文件保存在同一目录下。
+4. csv文件： excel或者wps excel、记事本等均可读取。推荐用excel打开，利于数据分析。数据输出格式为：
+
+      |  时间戳 | 变量1 | 变量2 |
+      |  ----  | ----  | --- |
+      | timestamp1 | value1 | value1|
+      | timestamp2  | value2 | value2 |
+      也直接可以load到j-scope里查看波形
+5. jraw文件： 直接load到j-scope看波形，不常用
+
+### 基本操作流程
+1. 运行程序：打开keil工程，进入debug，点击run，保证程序正在运行
+2. 添加文件：点击new project. 勾选existing seesion，再在elf文件栏中添加当前工程对应的axf文件即可。也可以勾选recent project,导入j-scope project文件即可，这种方法会保持上一次的变量配置
+3. 选择监视：跳出需要监视变量的窗口。勾选自己需要监视的变量即可。宁可多选几个，目前还没找到在波形记录时加入新变量的方法
+4. 开始记录：点击sampling旁边的小红点，开始记录波形。
+5. 观察波形：
+   
+      | 快捷键 | 功能 |
+      | --- | ---|
+      |  _alt_ + _+_/_-_| 缩放y坐标 |
+      | _ctrl_ + _+_/_-_ | 在y方向上移动波形 |
+      | <- / ->  | 缩放x坐标 |
+      | 双击变量名 | 隐藏对应波形 |
+      更多快捷键请参考，注意手册中的+-快捷键是无效的，应替换为 _alt_ + _+_/_-_ [官方手册 (j-scope version 5.10)](https://www.segger.com/downloads/jlink/)
+      | 名称 | 意义 |
+      | --- | ---|
+      |  _Y_Resolution_ | 图形界面中一格内显示的数据量，1M/div表示1格内包含1M个数据 |
+      | _Y_offset_ | 波形的起始位置相对于y轴的坐标 |
+      | _Moving_average_ | 移动平均，与平均值不同，可百度百科 |
+      工具栏中还有trigger模式，意义不大
+
+6. 导出数据：停止记录数据后，点击file-save project，可将文件保存为jscope project格式；点击export data，可导出csv

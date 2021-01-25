@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 title: whu-location # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   武汉大学机器人队定位组官网<br/>
@@ -45,16 +46,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href="/feed.xml"
                 title="RSS"
                 type="application/rss+xml"
-              />
-            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
-              <link
-                rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
-              />
-              <link
-                rel="shortcut
-                icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
               />
             - | # 来自lanyon的页面样式，不要改
               <link
@@ -132,39 +123,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
                   });'
               ></script>
-            - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
-              <script
-                src='https://zz.bdstatic.com/linksubmit/push.js'
-                async="async"
-              ></script>
-            - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
-              <style>
-                .wrap {
-                  transition-property: width,background-size,transform;
-                  transition-duration: .3s;
-                  transition-timing-function: ease-in-out;
-                  min-height: 100%;
-                  display: inline-block;
-                  background-size: 100% auto;
-                  background-position: 0% 0%;
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
-                  background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/74559485_p1.webp);
-                }
-                @media (min-aspect-ratio: 2400/1850) {
-                  .wrap {
-                    background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/71932901_p0.webp);
-                  }
-                }
-                .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-                  width: calc(100% - 14rem);
-                  background-size: calc(100% - 14rem) auto;
-                  transform: translateX(14rem);
-                }
-                .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-                  transform: translateX(0);
-                }
-              </style>
             - | # 网站字体，要换字体建议架梯子上<https://fonts.google.com/>挑选，再通过fonts.loli.net 加速引入
               <style>
                 .sidebar,
@@ -226,7 +184,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - title: '<i class="fas fa-tags fa-fw"></i> 标签'
                 href: /tags/
               - title: '<i class="fas fa-archive fa-fw"></i> 归档'
-                href: /archive/
+                href: /archive/(/_posts/2021-01-22-whu-location.md)
               - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
                 href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
@@ -394,31 +352,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     async='async'
                   ></script>
                 </div>
-              - | # 觉得我的主题好用的话，让更多的人知道它吧！
-                <div>
-                  <i class="fas fa-thumbs-up fa-fw"></i>
-                  <a href="https://jekyll-theme-WuK.wu-kan.cn">
-                    jekyll-theme-WuK
-                  </a>
-                </div>
               - | # Copyright声明
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  2017-2020 WuK
-                </div>
-              - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
-                <div>
-                  <i class="fas fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
-                  </a>
-                </div>
-              - | # 公安网备信息
-                <div>
-                  <img src="http://www.beian.gov.cn/img/new/gongan.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
-                  </a>
+                  2017-2020 WHU-LOCATION
                 </div>
             wordcount: # 全站字数统计
               enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
@@ -540,27 +477,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-        comments: # 留言页
-          append:
-            | # 配置评论区，appId和appKey需要换成你自己的，见<https://valine.js.org/configuration.html>，推荐再整一个评论管理系统<https://github.com/DesertsP/Valine-Admin>
-            <div class="v">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </div>
-            <script
-              src='https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js'
-              async="async"
-              onload='
-                for(let x of document.getElementsByClassName("v"))
-                  new Valine({
-                    "el": x,
-                    "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
-                    "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-                    "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
-                    "requiredFields": ["nick","mail"],
-                    "visitor": true,
-                    "recordIP": true
-                  })'
-            ></script>
         post:
           date: # 显示博文时间
             enable: true
@@ -585,7 +501,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
             <br/>
             <i class="fas fa-coffee fa-fw"></i>
-            <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
+            如果这篇博客帮助到你，那么希望你今天开心~
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
             <a
@@ -609,42 +525,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             enable: false
           year_count: true
           toc: # 在正文里显示一个归档的目录
-            enable: false
-        merger: # 打赏页，需要配置！
-          append_to_head:
-            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-              <script>
-                var myname = "OYH";
-                var profile = "i@wu-kan.cn";
-                var usage = "payment";
-                var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
-                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
-                var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
-                var paypal = "https://paypal.me/wukan0621";
-                var multilingual = false;
-                var branding = false;
-                var title = "选择你的支付方式";
-                var subtitle = "跟随进一步的指示以向" + myname + "付款";
-                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                var gravatar_url = "https://gravatar.loli.net/avatar/";
-              </script>
-            - |
-              <meta
-                charset="utf-8"
-              />
-              <meta
-                name="viewport"
-                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-              />
-              <meta
-                http-equiv="Content-Security-Policy"
-                content="upgrade-insecure-requests"
-              />
-            - | # merger的页面样式
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/jekyll-theme-diary-master/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/styles/style.min.css">
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/js/function.min.js,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-    
+            enable: false    
         home: # 展示页的配置可跳过，详见<https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
