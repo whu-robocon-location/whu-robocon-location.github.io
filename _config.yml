@@ -1,23 +1,11 @@
-title: wu-kan # 站点标题
+title: whu-location # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  武汉大学定位组<br/>
-  yx<br/>
-  oyh<br/>
-  hqr<br/>
+  武汉大学机器人队定位组官网<br/>
   <a href="mailto:i@wu-kan.cn">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://github.com/wu-kan">
+  <a href="https://github.com/lizinan">
     <i class="fab fa-github"></i>
-  </a>
-  <a href="https://codeforces.com/profile/WuK">
-    <i class="fas fa-chart-bar"></i>
-  </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fas fa-smile"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
-    <i class="fab fa-zhihu"></i>
   </a>
   <iframe
     src="https://music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"
@@ -25,11 +13,11 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     height=52
     frameborder="no"
     border="0"
-    marginwidth="0"
-    marginheight="0"
+    marginwidth="500"
+    marginheight="100"
   ></iframe>
 url: https://whu-robocon-location.github.io/ # 你的域名，例如 https://wu-kan.github.io
-baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+baseurl: "jekyll-theme-diary-master" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
   - scope:
@@ -108,7 +96,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                     "content": {
                       "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
-                      "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                      "skin": ["Zzz", "哼唧~"],
                       "hidden": true,
                       "custom": [{
                         "selector": "a",
@@ -269,7 +257,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   async='async'
                   onload='
                     SimpleJekyllSearch({
-                      json: "/assets/simple-jekyll-search/search.json",
+                      json: "jekyll-theme-diary-master/assets/simple-jekyll-search/search.json",
                       searchInput: document.getElementById("sidebar-search-input"),
                       resultsContainer: document.getElementById("sidebar-search-results-container"),
                       searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
@@ -378,7 +366,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "21/01/2021 11:03:56")// 这是我第一篇CSDN博客的时间
                   </script>
                 </div>
               - | # 不蒜子页面统计，看不懂可不改
@@ -653,9 +641,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 content="upgrade-insecure-requests"
               />
             - | # merger的页面样式
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/jekyll-theme-diary-master/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/styles/style.min.css">
               <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/js/function.min.js,gh/hifocus/merger@0.26.1/jekyll-theme-diary-master/assets/js/font_974919_xgtacm93vxp.min.js"></script>
     
         home: # 展示页的配置可跳过，详见<https://revealjs.com/>
           append_to_section_tag:
