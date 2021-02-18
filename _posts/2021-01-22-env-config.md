@@ -1,7 +1,11 @@
+---
 layout: post
 title: "config local jekyll website"
 date: 2021-01-22
-categories: CATEGORY-1 CATEGORY-2
+tags:
+  - test
+---
+
 # config local jekyll website
 
 ###
