@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "config local jekyll website"
+title: "env config"
 date: 2021-01-22
 tags:
   - test
