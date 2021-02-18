@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-22 09:32:52
- * @LastEditTime: 2021-01-24 16:42:39
+ * @LastEditTime: 2021-02-18 08:22:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Nancy\Desktop\jekyll-theme-diary-master\README.md
@@ -13,7 +13,6 @@
 ## Contact
 
 - Address: **Wuhan,Wuhan university,Hubei, China**
-- Phone: **+86 17371318464**
 - Site: **<https://whu-robocon-location.github.io>**
 
 <!-- .slide -->
@@ -23,10 +22,6 @@
 <!-- .slide vertical=true -->
 
 School of Mechine and Engineering, Wuhan University, Wuhan
-
-  - first scholarship
-  - national scholarship
-  - GPA 3.83
 
 <!-- .slide -->
 
@@ -39,7 +34,7 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 <!-- .slide -->
 
 ## Blogs
-- [Lalala](https://whu-robocon-location.github.io/_posts/2021-01-22-whu-location/)
+- [Lalala](file:///E:/WHU_RO/jekyll-theme-diary-master/_site/_posts/2021-01-22-env-config/index.html)
 - [WUWUWU](https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
 
 <!-- .slide vertical=true -->
