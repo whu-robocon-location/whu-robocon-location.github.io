@@ -19,7 +19,7 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 
 ## Blogs
 
-- [日志汇总](hhttps://whu-robocon-location.github.io/archive/)
+- [日志汇总](https://whu-robocon-location.github.io/archive/)
 - [代码区域](https://whu-robocon-location.github.io/archive/)
 
 
