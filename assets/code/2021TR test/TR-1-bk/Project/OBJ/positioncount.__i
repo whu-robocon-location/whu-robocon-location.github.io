@@ -1,0 +1,7 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\GeneralFunction\inc -I ..\..\Libraries\CMSIS -I ..\..\uCOSII\PORT -I ..\..\uCOSII\CORE -I ..\..\uCOSII\CONFIG -I ..\..\uCOSII\api\inc -I ..\..\driver\inc -I ..\..\User\inc -I ..\..\app\inc
+-I C:\Users\11709\Desktop\Application\Robocon\定位\11月\全向轮\全向轮-VG103\Project\PRO\RTE
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Device\Include
+-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -D__CC_ARM --C99
+-o ..\obj\positioncount.o --omf_browse ..\obj\positioncount.crf --depend ..\obj\positioncount.d "..\..\User\src\PositionCount.c"

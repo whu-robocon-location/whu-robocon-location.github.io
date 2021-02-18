@@ -1,9 +1,6 @@
 title: whu-location # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   武汉大学机器人队定位组官网<br/>
-  <a href="mailto:i@wu-kan.cn">
-    <i class="fas fa-envelope"></i>
-  </a>
   <a href="https://github.com/lizinan">
     <i class="fab fa-github"></i>
   </a>
@@ -17,7 +14,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     marginheight="100"
   ></iframe>
 url: https://whu-robocon-location.github.io/ # 你的域名，例如 https://wu-kan.github.io
-baseurl: "jekyll-theme-diary-master" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
   - scope:
@@ -183,7 +180,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - title: '<i class="fas fa-tags fa-fw"></i> 标签'
                 href: /tags/
               - title: '<i class="fas fa-archive fa-fw"></i> 归档'
-                href: /archive/(/_posts/2021-01-22-whu-location.md)
+                href: /archive/
               - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
                 href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
@@ -214,7 +211,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   async='async'
                   onload='
                     SimpleJekyllSearch({
-                      json: "jekyll-theme-diary-master/assets/simple-jekyll-search/search.json",
+                      json: "/assets/simple-jekyll-search/search.json",
                       searchInput: document.getElementById("sidebar-search-input"),
                       resultsContainer: document.getElementById("sidebar-search-results-container"),
                       searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
