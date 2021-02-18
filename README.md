@@ -35,7 +35,7 @@ School of Mechine and Engineering, Wuhan University, Wuhan
 
 ## Blogs
 - [Lalala](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/_site/_posts/2021-01-22-env-config/index.html/)
-- [WUWUWU](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/_site/_posts/2021-01-22-env-config/index.html)
+- [WUWUWU](https://whu-robocon-location.github.io/_posts/2021-01-22-env-config/)
 
 <!-- .slide vertical=true -->
 
