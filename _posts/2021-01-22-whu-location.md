@@ -1,8 +1,10 @@
 ---
-title: WHU Location Website
+title: 武汉大学定位组介绍
 layout: post
 categories: [Location]
-tags: [Location]
+tags: 
+	- summary
+	- tutorial
 image: /assets/img/oranges.jpg
 description: "This is WHU Location Website"
 ---
@@ -17,6 +19,7 @@ description: "This is WHU Location Website"
 * 1. Gryo： VG910, VG103PT
 * 2. Radar：Robosense，Sick，北阳
 * 3. Distance sensor：DT35,DT50
+* 4. Laser sensor： --
 
 ### Contact
 For more info，please visit Wuhan University
