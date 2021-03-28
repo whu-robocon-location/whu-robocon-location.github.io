@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1170985872@qq.com, 1, LIC=HF82Z-J5VQA-JPVZQ-NSA2W-XCRL6-UIJQU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\11709\Desktop\21-03-11-TR1.5\TR-1\Project\PRO\project.uvprojx
+Project File Date:  03/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling PositionCount.c...
+..\..\User\src\PositionCount.c(1513): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				  POS_SCALE = 0.9997237 * SCALE_TAB[(int)(filted_rate * 10)];
+..\..\User\src\PositionCount.c(1518): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					NEG_SCALE = 0.9995306 * SCALE_TAB[(int)(-filted_rate * 10)];
+..\..\User\src\PositionCount.c(1594): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	K2 = arc_K2 - (107.7669323);
+..\..\User\src\PositionCount.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=24660 RO-data=1124 RW-data=6160 ZI-data=46408  
+FromELF: creating hex file...
+"..\OBJ\project.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\11709\Desktop\21-03-11-TR1.5\TR-1\Project\PRO\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
