@@ -4,8 +4,6 @@ layout: post
 categories: [Location]
 tags: 
 	- summary
-	- tutorial
-image: /assets/img/oranges.jpg
 description: "This is WHU Location Website"
 ---
 
