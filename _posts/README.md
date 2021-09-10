@@ -24,7 +24,7 @@ tags:
 
 定位组一般有两个任务：1. 标定陀螺仪；2. 反算模型的参数
 
-* SCALE标定：参考[陀螺仪标定](https://whu-robocon-location.github.io/_posts/2021-09-09-GryoScale)
+* SCALE标定：参考[陀螺仪标定](https://whu-robocon-location.github.io/_posts/2021-09-09-GyroScale)
 
 * 反算小车参数
   
