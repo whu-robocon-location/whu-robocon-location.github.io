@@ -1,7 +1,7 @@
 ---
-title: "yesense简介"
+title: "定位组总结"
 tags:
-- yesense
+- summary
 ---
 
 # 定位任务
