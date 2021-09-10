@@ -1,3 +1,0 @@
-/home/nancy/Downloads/detector-master/build/CMakeFiles/rebuild_cache.dir
-/home/nancy/Downloads/detector-master/build/CMakeFiles/detectBucket.dir
-/home/nancy/Downloads/detector-master/build/CMakeFiles/edit_cache.dir
