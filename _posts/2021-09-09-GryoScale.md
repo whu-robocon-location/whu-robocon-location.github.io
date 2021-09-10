@@ -1,3 +1,9 @@
+---
+title："陀螺仪标定实验"
+tags：
+- gyro
+---
+
 # 陀螺仪标定
 
 ## 目的
@@ -9,25 +15,27 @@
 陀螺仪直接输出的是AD值，我们需要对AD值进行转换才能得到当前的角速度，进而积分得到角度。因此，我们定义积分系数
 
 $$
-\begin{equation}
 Scale = \frac{AD}{\omega}
-\end{equation}
 $$
+
 实验发现，积分系数与角速度相关，需要在不同转速下测定积分系数与角速度的关系。在代码中，我们引入中间变量filted_rate
+
 $$
 filted\_rate = AD*Sample\_Time
 $$
+
 根据不同转速下测定积分系数与filted_rate的关系，并用二次曲线拟合，得到
+
 $$
 Scale = A*filted\_rate^2 + B*filted\_rate + C
 $$
+
 单片机运算能力不足，不能实时根据角速度计算积分系数，故我们采取牺牲空间的查表法,保证filted_rate从1~1500变化时都有对应的积分系数。于是有：
+
 $$
-\begin{equation}
 AD = Scale*\omega\\
 filted\_rate = AD*Sample\_Time\\
 \theta = filted\_rate/Scale*Sample\_Time
-\end{equation}
 $$
 
 
@@ -72,7 +80,7 @@ $$
 1. 将Position中的AngleDeg加入监视，开启周期更新窗口
 2. 打开elmo上位机，使电机以30°/s,60°/s,120°/s转动±360°，观察角度值是否逼近±360°，误差在0.1°以内代表数据正常，结束标定；
 3. 否则，使电机按照表格中填写的数值转动。由于间隙的存在，我们需要让陀螺仪每次都转过间隙角，即开始和结束时都朝着同一方向把陀螺仪怼一下。电机转动之前保持陀螺仪静止3s，保证陀螺仪没有零漂
-4. 将angleDeg的值填入[表格](..\VG910ScaleTemplate.xlsx)中，继续下一组角速度实验，reset清空当前角度值
+4. 将angleDeg的值填入[表格](https://github.com/whu-robocon-location/whu-robocon-location.github.io/tree/master/_posts/VG910ScaleTemplate.xlsx)中，继续下一组角速度实验，reset清空当前角度值
 5. 每个速度做一遍，做完10个速度检查一下数据。使用VG910时角度一定会有明显的减小，VG103PT则基本平稳。VG910做到150°/s即可，VG103PT做到300°/s
 6. 绘制角速度和积分系数的图，使用二次曲线拟合，若R²小于0.97，剔除异常数据，并在该角速度下重新做实验；
-7. 当R²满足要求，计算filtedRate，拟合filtedRate和积分系数的关系，使filtedRate从0到1500变化，计算积分系数，然后导出[积分系数](../ScaleEG.txt)，填入代码中的ScaleTab
+7. 当R²满足要求，计算filtedRate，拟合filtedRate和积分系数的关系，使filtedRate从0到1500变化，计算积分系数，然后导出[积分系数](https://github.com/whu-robocon-location/whu-robocon-location.github.io/tree/master/_posts/ScaleEG.txt)，填入代码中的ScaleTab
