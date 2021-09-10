@@ -1,14 +1,20 @@
+---
+title: "yesense简介"
+tags:
+- yesense
+---
+
 # 定位任务
 
 ### 1. 定位仪器简介
 
 | 仪器名称                                | 数量 | 备注                                                         |
 | --------------------------------------- | ---- | ------------------------------------------------------------ |
-| [光纤陀螺仪VG910](./2021-03-28-VG.md)   | 2    | 在TR和DR上，使用最频繁                                       |
-| [光纤陀螺仪VG103PT](./2021-03-28-VG.md) | 1    | 在川宝小车上，灵敏度高，适用于抖动较小场景                   |
-| [yesense](./2021-03-28-yesense.md)      | 3    | 定位组箱子里两个，还有一个在狗上面                           |
-| [码盘](./2021-03-28-Encoder.md)         | 3    | 稀缺，催机械组做，目前TRDR和川宝车上各一个                   |
-| [导轨+滑块](./2021-03-28-Slider.md)     | 1    | 导轨生锈了，催机械组买滑块，买完后上导轨试一试。滑块的滚珠也放在箱子里。 |
+| [光纤陀螺仪VG910](https://whu-robocon-location.github.io/_posts/2021-03-28-VG)   | 2    | 在TR和DR上，使用最频繁                                       |
+| [光纤陀螺仪VG103PT](https://whu-robocon-location.github.io/_posts/2021-03-28-VG) | 1    | 在川宝小车上，灵敏度高，适用于抖动较小场景                   |
+| [yesense](https://whu-robocon-location.github.io/_posts/2021-03-28-yesense)      | 3    | 定位组箱子里两个，还有一个在狗上面                           |
+| [码盘](https://whu-robocon-location.github.io/_posts/2021-03-28-Encoder)         | 3    | 稀缺，催机械组做，目前TRDR和川宝车上各一个                   |
+| [导轨+滑块](https://whu-robocon-location.github.io/_posts/2021-03-28-Slider)     | 1    | 导轨生锈了，催机械组买滑块，买完后上导轨试一试。滑块的滚珠也放在箱子里。 |
 | 陀螺仪标定架                            | 1    | 柜子放不下，找个地方收起来，别弄丢了                         |
 | 导轮和夹子、透明工具盒                  |      | 透明盒子里是装车辅助工具，如树脂板、滑块原装顶、尼龙套等。导轮用于对位，夹子用于固定车和滑块。 |
 
@@ -18,20 +24,20 @@
 
 定位组一般有两个任务：1. 标定陀螺仪；2. 反算模型的参数
 
-* SCALE标定：参考[陀螺仪标定](./2定位原理/陀螺仪标定流程.md)
+* SCALE标定：参考[陀螺仪标定](https://whu-robocon-location.github.io/_posts/2021-09-09-GryoScale)
 
 * 反算小车参数
   
-  * 各参数含义:参考[小车基本模型](./2定位原理/代码模型.pdf)
+  * 各参数含义:参考[小车基本模型](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/assets/pdf/%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9E%8B.pdf)
   
-  * CM1，CM2，β，Ψ标定:[直线反算](./2定位原理/直线解算及模型反算.pdf)、[联合标定原理](./2定位原理/联合标定原理.pdf)
-  * α，L标定：[圆弧反算](./2定位原理/圆弧解算及模型反算.pdf)
+  * CM1，CM2，β，Ψ标定:[直线反算](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/assets/pdf/%E7%9B%B4%E7%BA%BF%E8%A7%A3%E7%AE%97%E5%8F%8A%E6%A8%A1%E5%9E%8B%E5%8F%8D%E7%AE%97.pdf)、[联合标定原理](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/assets/pdf/%E8%81%94%E5%90%88%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86.pdf)
+  * α，L标定：[圆弧反算](https://github.com/whu-robocon-location/whu-robocon-location.github.io/blob/master/assets/pdf/%E5%9C%86%E5%BC%A7%E8%A7%A3%E7%AE%97%E5%8F%8A%E6%A8%A1%E5%9E%8B%E5%8F%8D%E7%AE%97.pdf)
 
 ### 3. 实验详解及经验
 
 ​	在做实验之前需要熟练掌握代码的变量意义以及流程，可以把函数运行时间都统计一下，比如开机采集零点的地方就需要测试一下。我们一般让陀螺仪开机静止5s，用于采集零点。
 
-* [实验流程](./2021-09-09-Process.md)
+* [实验流程](https://whu-robocon-location.github.io/_posts/2021-09-09-Process)
 
   
 
@@ -61,9 +67,8 @@
 
 现在定位组想解决的问题主要有下面几个：
 
-		1. 圆弧更新的实验方法。我们现在提出要让实验员将角度精度控制在0.01°以内，这是非常难的事情，所以我们必须改进实验办法，降低对实验员的要求，才能快速获取圆弧更新数据。或者如果经济条件允许，可以购买更专业的设备来辅助标定；
-		2. yesense的加速度滤波
-
+1. 圆弧更新的实验方法。我们现在提出要让实验员将角度精度控制在0.01°以内，这是非常难的事情，所以我们必须改进实验办法，降低对实验员的要求，才能快速获取圆弧更新数据。或者如果经济条件允许，可以购买更专业的设备来辅助标定；
+2. yesense的加速度滤波
 3. 如果还有兴趣，大家可以看一看激光定位。全场定位的概念已经提出10年了，现在更多学校使用激光传感器甚至是视觉定位，大家可以多关注相关内容，跟进新技术。不断的技术更新和迭代才是robocon的初心和魅力所在。
 
 ​		
