@@ -35,7 +35,7 @@ $$
 $$
 AD = Scale*\omega\\
 filted\_rate = AD*Sample\_Time\\
-\theta = filted\_rate/Scale*Sample\_Time
+\theta = /sum filted\_rate/Scale
 $$
 
 实验证明，陀螺仪正转和反转时积分系数也有不同，但变化趋势相同。为了减少实验量，我们定义Pos_Scale和Neg_Scale,即
